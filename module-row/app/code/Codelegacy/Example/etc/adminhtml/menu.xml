@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- Add new Item to Admin left Menu -->
+        <!-- parent is not required -->
+        <add 
+            id="Codelegacy_Genesis::menu" 
+            title="Genesis" 
+            translate="title" 
+            module="Codelegacy_Genesis" 
+            sortOrder="500"  
+            resource="Codelegacy_Genesis::menu"
+        />
+        <!-- add new  sub Item under this new Menu -->
+        <add 
+            id="Codelegacy_Genesis::listing" 
+            title="Manage Genesis" 
+            translate="title" 
+            module="Codelegacy_Genesis" 
+            parent="Codelegacy_Genesis::menu" 
+            sortOrder="10" 
+            resource="Codelegacy_Genesis::genesis_listing" 
+            action="genesisadminid/genesis/listing"
+        />
+    </menu>
+</config>

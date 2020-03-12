@@ -1,0 +1,17 @@
+{
+    "name": "codelegacy/module-genesis",
+    "description": "Module Creation Genesis",
+    "type": "magento2-module",
+    "keywords": ["My keyword"],
+    "license": "MIT",
+    "version": "1.0.0",
+    "minimum-stability": "stable",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Codelegacy\\Genesis\\": ""
+        }
+    }
+}

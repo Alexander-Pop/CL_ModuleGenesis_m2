@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Genesis Page</title>
+    </head>
+
+    <body>
+        <!-- as i want to show at content section then use content as referenceContainer -->
+        <referenceContainer name="content">
+            <block 
+                class="Codelegacy\Genesis\Block\Genesis" 
+                name="genesis.myblock" as="genesis-myblock"
+                template="Codelegacy_Genesis::genesis.phtml"> 
+            </block>
+
+        </referenceContainer>
+    </body>
+
+</page>

@@ -1,0 +1,17 @@
+<?php
+/* Glory to Ukraine! Glory to the heros! */
+/** @var \Codelegacy\Genesis\Block\Genesis $block */
+$student = $block->getJohnInfo();
+?>
+
+<?php if($student):?>
+    <?php echo $student->getName(); ?>
+    <?php 
+	    echo '<pre>'; 
+	    	print_r($student->debug());
+	    echo '</pre>'; 
+    ?>
+<?php endif; ?>
+
+
+
